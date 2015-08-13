@@ -15,21 +15,19 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        margin:0!important;
        }
        body {
-       background:url(<?php echo $image_url[0]; ?>) #000 left top repeat;
+       background:url(<?php echo $image_url[0]; ?>) #fff center center repeat;
        /*background-size: 100% 100%; */
        }
-       /* Uncomment if the image hangs low in a Genesis theme */
-       /*.site-inner {
-       padding-top:0!important;
-       padding-bottom:0!important;
-       }*/
+       .wrapper {
+        height: auto;
+       }
      </style>
    <?php
  }  //end if statement
 } //end vr_set_featured_background() function
 get_header();  ?>
 
-<div class="main main-home">
+<div class="main main-about">
   <div class="container">
 
     <?php // Start the loop ?>
@@ -39,7 +37,7 @@ get_header();  ?>
       <h2><?php the_title(); ?></h2>
   */ ?>
 
-      <div><?php the_content(); ?></div>
+      <div class="about-text"><?php the_content(); ?></div>
 
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->

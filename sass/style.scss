@@ -60,10 +60,6 @@ Home Page Default Styling
 ====================================
 */
 
-.main-home {
-	text-align: center;
-}
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -71,7 +67,86 @@ Home Page Default Styling
 	height: 100vh;
 }
 
+.main-home {
+	text-align: center;
+}
 
+header .container {
+  margin-top: 2.5rem;
+}
+
+.hero-text {
+	width: 30%;
+	padding: 4% 0;
+	margin: 0 auto;
+	background: $seagreen70;
+}
+
+.hero-text p {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 7.2rem;
+	color: $sunset;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-text p:last-child {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.8rem;
+	color: $sunset;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+====================================
+About Page Default Styling
+====================================
+*/
+
+.main-about {
+	text-align: center;
+	margin: 6% 0 5% 0;
+}
+
+.about-text {
+	width: 70%;
+	padding: 2% 6%;
+	margin: 0 auto;
+	background: $seagreen70;
+}
+
+.about-text p {
+	font-size: 1.6rem;
+	color: #333;
+	line-height: 1.5;
+	font-family: 'Roboto Slab', serif;
+}
+
+.about-text p:first-child {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.8rem;
+	color: $sunset;
+	line-height: 1;
+	margin-bottom: 1%;
+	padding: 0;
+}
+
+
+/*
+====================================
+Footer Default Styling
+====================================
+*/
+footer p {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.7rem;
+	font-weight: 300;
+	color: $sunset;
+	margin: 0;
+	padding: 10px 0;
+}
 
 
 
