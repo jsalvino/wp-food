@@ -14,18 +14,24 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 /*
 ====================================
 Default Styling
 ====================================
 */
 
-img {
-	max-width: 100%;
+html {
+	font-size: 10px;
 }
 
 body {
 	color: #333;
+	font-family: 'Roboto Slab', serif;
+}
+
+img {
+	max-width: 100%;
 }
 
 .container {
@@ -43,6 +49,20 @@ body {
 	width: 100%;
 }
 
+header,
+footer {
+	text-align: center;
+}
+
+/*
+====================================
+Home Page Default Styling
+====================================
+*/
+
+.main-home {
+	text-align: center;
+}
 
 
 
