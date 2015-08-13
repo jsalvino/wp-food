@@ -1,7 +1,7 @@
 <?php
 
 /*
-  Template Name: Home
+  Template Name: About
 */
 add_action( 'wp_head', 'vr_set_featured_background', 99);
   function vr_set_featured_background() {
@@ -15,9 +15,8 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        margin:0!important;
        }
        body {
-       background:url(<?php echo $image_url[0]; ?>) #fff center bottom no-repeat;
+       background:url(<?php echo $image_url[0]; ?>) #000 left top repeat;
        /*background-size: 100% 100%; */
-       background-size: cover;
        }
        /* Uncomment if the image hangs low in a Genesis theme */
        /*.site-inner {
@@ -31,7 +30,7 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
 get_header();  ?>
 
 <div class="main main-home">
-  <div class="container container-home">
+  <div class="container">
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -40,7 +39,7 @@ get_header();  ?>
       <h2><?php the_title(); ?></h2>
   */ ?>
 
-      <div class="hero-text"><?php the_content(); ?></div>
+      <div><?php the_content(); ?></div>
 
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->

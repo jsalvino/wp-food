@@ -64,6 +64,12 @@ Home Page Default Styling
 	text-align: center;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
 
 
 

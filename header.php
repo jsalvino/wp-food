@@ -18,8 +18,9 @@
 
 
 <body <?php body_class(); ?>>
-
+<div class="wrapper">
 <header>
+
   <div class="container">
     
     <?php /* commenting out h1
