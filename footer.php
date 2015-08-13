@@ -4,7 +4,7 @@
   	  'container' => false,
   	  'theme_location' => 'social'
   	)); ?>
-    <p>&copy; <?php the_title(); ?> <?php echo date('Y'); ?></p>
+    <p>&copy; <?php echo get_bloginfo ( 'name' ); ?> <?php echo date('Y'); ?></p>
   </div>
 </footer>
 </div> <!-- wrapper -->

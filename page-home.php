@@ -19,11 +19,6 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        /*background-size: 100% 100%; */
        background-size: cover;
        }
-       /* Uncomment if the image hangs low in a Genesis theme */
-       /*.site-inner {
-       padding-top:0!important;
-       padding-bottom:0!important;
-       }*/
      </style>
    <?php
  }  //end if statement
