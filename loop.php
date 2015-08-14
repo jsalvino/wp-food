@@ -15,7 +15,12 @@
 <?php // if there are posts, Start the Loop. ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
+		<?php 
+		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			the_post_thumbnail('large');
+		} 
+		?>
+		
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title">
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
