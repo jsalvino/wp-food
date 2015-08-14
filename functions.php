@@ -159,16 +159,53 @@ add_filter( 'get_the_excerpt', 'hackeryou_custom_excerpt_more' );
  */
 function hackeryou_widgets_init() {
 	// Area 1, located at the top of the sidebar.
-	register_sidebar( array(
-		'name' => 'Primary Widget Area',
-		'id' => 'primary-widget-area',
-		'description' => 'The primary widget area',
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
+	register_sidebar(
+		array(
+			'name' => 'Primary Widget Area',
+			'id' => 'primary-widget-area',
+			'description' => 'The primary widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 2, food menu 1
+	register_sidebar(
+		array(
+			'name' => 'Food Menu1 Widget Area',
+			'id' => 'foodmenu1-widget-area',
+			'description' => 'The food menu 1 widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu1">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 3, food menu 2
+	register_sidebar(
+		array(
+			'name' => 'Food Menu2 Widget Area',
+			'id' => 'foodmenu2-widget-area',
+			'description' => 'The food menu 2 widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 4, food menu 3
+	register_sidebar(
+		array(
+			'name' => 'Food Menu3 Widget Area',
+			'id' => 'foodmenu3-widget-area',
+			'description' => 'The food menu 3 widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
