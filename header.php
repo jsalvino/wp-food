@@ -16,8 +16,8 @@
   <?php wp_head(); ?>
 </head>
 
+<body <?php body_class(); ?> <?php post_class(); ?>>
 
-<body <?php body_class(); ?>>
 <div class="wrapper">
 <header>
 
