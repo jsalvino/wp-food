@@ -1,7 +1,7 @@
 <?php
 
 /*
-  Template Name: About
+  Template Name: Contact
 */
 add_action( 'wp_head', 'vr_set_featured_background', 99);
   function vr_set_featured_background() {
@@ -15,18 +15,20 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        margin:0!important;
        }
        body {
-       background:url(<?php echo $image_url[0]; ?>) #fff center center repeat;
+       /*background: url(<?php echo $image_url[0]; ?>) #fff center center no-repeat; */
+       background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(<?php echo $image_url[0]; ?>) #fff center center no-repeat;
+       background-size: cover;
        }
-       .wrapper {
+       /*.wrapper {
         height: auto;
-       }
+       }*/
      </style>
    <?php
  }  //end if statement
 } //end vr_set_featured_background() function
 get_header();  ?>
 
-<div class="main main-about">
+<div class="main main-contact">
   <div class="container">
 
     <?php // Start the loop ?>
@@ -36,10 +38,10 @@ get_header();  ?>
       <h2><?php the_title(); ?></h2>
   */ ?>
 
-      <div class="about-text"><?php the_content(); ?></div>
+      <div class="contact-text"><?php the_content(); ?></div>
+        <?php get_sidebar( 'contact' ); ?>
 
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
 </div> <!-- /.main -->
-
 <?php get_footer(); ?>
