@@ -15,32 +15,39 @@
 <?php // if there are posts, Start the Loop. ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-		<?php 
-		if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-			the_post_thumbnail('large');
-		} 
-		?>
 		
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?>
-        </a>
-      </h2>
+		<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
 
-			<section class="entry-content">
-				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-				<?php wp_link_pages( array(
-          'before' => '<div class="page-link"> Pages:',
-          'after' => '</div>'
-        )); ?>
-			</section><!-- .entry-content -->
+			<section class="entry-img">
+				<?php // if there is a featured image, show the image
+				if ( has_post_thumbnail() ) { 
+					the_post_thumbnail('medium');
+				} 
+				?>
+			</section> <!-- /.entry-img -->
 
-			<footer>
-				<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
-			</footer>
+			<section class="entry-text">
+
+				<h2 class="entry-title">
+	        		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+	          		&mdash;&nbsp;<?php the_title(); ?>&nbsp;&mdash;
+	        		</a>
+	      		</h2> <!-- /.entry-title -->
+
+				<section class="entry-content">
+					<?php the_content('More <span class="meta-nav">&rarr;</span>'); ?>
+					<?php wp_link_pages( array(
+	          			'before' => '<div class="page-link"> Pages:',
+	          			'after' => '</div>'
+	        		)); ?>
+				</section> <!-- .entry-content -->
+
+				<footer class="entry-footer">
+					<p><?php the_tags('Tags: ', ' ', '<br>'); ?> Categories: <?php the_category(' '); ?></p>
+	        		<p><?php comments_popup_link('Comment &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?><span class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
+				</footer> <!-- /.entry-footer -->
+
+			</section> <!-- /.entry-text -->
 
 		</article><!-- #post-## -->
 
