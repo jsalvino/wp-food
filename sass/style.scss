@@ -136,6 +136,27 @@ About Page Default Styling
 
 /*
 ====================================
+Menu Page Default Styling
+====================================
+*/
+.main-food-menu .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10% 0;
+}
+
+.main-food-menu .sidebar {
+	text-align: center;
+	width: 100%;
+}
+
+.main-food-menu .sidebar img {
+	width: 100%;
+}
+
+/*
+====================================
 Footer Default Styling
 ====================================
 */

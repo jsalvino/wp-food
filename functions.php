@@ -170,37 +170,73 @@ function hackeryou_widgets_init() {
 			'after_title' => '</h3>',
 		)
 	);
-	// Area 2, food menu 1
+	// Area 2, food menu 1 title
 	register_sidebar(
 		array(
 			'name' => 'Food Menu1 Widget Area',
 			'id' => 'foodmenu1-widget-area',
 			'description' => 'The food menu 1 widget area',
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu1">',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu1 food-menu1title">',
 			'after_widget' => '</li>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		)
 	);
-	// Area 3, food menu 2
+	// Area 3, food menu 1 items
+	register_sidebar(
+		array(
+			'name' => 'Food Menu1 Items Widget Area',
+			'id' => 'foodmenu1items-widget-area',
+			'description' => 'The food menu 1 items widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu1 food-menu1items">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 4, food menu 2 title
 	register_sidebar(
 		array(
 			'name' => 'Food Menu2 Widget Area',
 			'id' => 'foodmenu2-widget-area',
 			'description' => 'The food menu 2 widget area',
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu2 food-menu2title">',
 			'after_widget' => '</li>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		)
 	);
-	// Area 4, food menu 3
+	// Area 5, food menu 2 items
+	register_sidebar(
+		array(
+			'name' => 'Food Menu2 Items Widget Area',
+			'id' => 'foodmenu2items-widget-area',
+			'description' => 'The food menu 2 items widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu2 food-menu2items">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 6, food menu 3 title
 	register_sidebar(
 		array(
 			'name' => 'Food Menu3 Widget Area',
 			'id' => 'foodmenu3-widget-area',
 			'description' => 'The food menu 3 widget area',
-			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu3 food-menu3title">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+	// Area 7, food menu 3 items
+	register_sidebar(
+		array(
+			'name' => 'Food Menu3 Items Widget Area',
+			'id' => 'foodmenu3items-widget-area',
+			'description' => 'The food menu 3 items widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s food-menu3 food-menu3items">',
 			'after_widget' => '</li>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
