@@ -242,6 +242,18 @@ function hackeryou_widgets_init() {
 			'after_title' => '</h3>',
 		)
 	);
+	// Area 8, contact information
+	register_sidebar(
+		array(
+			'name' => 'Contact Info Widget Area',
+			'id' => 'contactinfo-widget-area',
+			'description' => 'The contact info widget area',
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
