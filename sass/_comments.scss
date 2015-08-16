@@ -5,29 +5,41 @@ Comments Default Styling
 */
 
 #comments .navigation {
-	padding: 0 0 18px;
+	padding: 0 0 1.8rem;
+}
+
+#comments .comments-title {
+	color: darken($seagreen, 35%);
+	font-weight: 300;
+	font-size: 2.4rem;
+	text-transform: uppercase;
 }
 
 h3 {
 	&#comments-title, &#reply-title {
-		color: #000000;
-		font-weight: 700;
-		font-size: 20px;
+		color: darken($seagreen, 35%);
+		font-weight: 300;
+		font-size: 2.4rem;
 		margin-bottom: 0;
 	}
 	&#comments-title {
-		padding: 24px 0;
+		padding: 2.4rem 0;
 	}
+}
+
+#comments ol.comment-list {
+	list-style-type: none;
+	padding: 0;
 }
 
 .commentlist li {
 	&.comment {
-		border-bottom: 1px solid #e7e7e7;
-		line-height: 24px;
+		border-bottom: 1px solid darken($seagreen, 35%);
+		line-height: 2.4rem;
 		position: relative;
 		clear: both;
-		margin: 0 0 24px;
-		padding: 0 0 0 56px;
+		margin: 0 0 2.4rem;
+		padding: 0 0 0 5.6rem;
 	}
 	&:last-child {
 		border-bottom: none;
@@ -37,13 +49,13 @@ h3 {
 
 #comments .comment-body {
 	ul, ol {
-		margin-bottom: 18px;
+		margin-bottom: 1.8rem;
 	}
 	p:last-child {
-		margin-bottom: 6px;
+		margin-bottom: 0.6rem;
 	}
 	blockquote p:last-child {
-		margin-bottom: 24px;
+		margin-bottom: 2.4rem;
 	}
 }
 
@@ -59,37 +71,40 @@ h3 {
 }
 
 .comment-author {
-	cite {
-		color: #000000;
+	float: left;
+	width: 10%;
+	margin: 0 3% 5% 0;
+	.fn {
+		color: darken($seagreen, 35%);
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	.says {
-		font-style: italic;
+		display: none;
 	}
 }
 
 .comment-meta {
-	font-size: 12px;
-	margin: 0 0 5px;
+	font-size: 1.2rem;
+	margin: 0 0 0.5rem;
 	a {
 		&:link, &:visited {
-			color: #888888;
+			color: darken($seagreen, 35%);
 			text-decoration: none;
 		}
 	}
 }
 
 .reply {
-	font-size: 12px;
-	padding: 0 0 24px;
+	font-size: 1.2rem;
+	padding: 0 0 2.4rem;
 	a {
-		color: #888888;
+		color: darken($seagreen, 35%);
 	}
 }
 
 a.comment-edit-link {
-	color: #888888;
+	color: darken($seagreen, 35%);
 }
 
 .commentlist .children li {
@@ -98,103 +113,124 @@ a.comment-edit-link {
 }
 
 #comments .pingback {
-	margin-bottom: 18px;
-	padding-bottom: 18px;
-	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 1.8rem;
+	padding-bottom: 1.8rem;
+	border-bottom: 1px solid darken($seagreen, 35%);
 }
 
 .commentlist li.comment + li.pingback {
-	margin-top: -6px;
+	margin-top: -0.6rem;
 }
 
 #comments .pingback {
 	p {
-		color: #888888;
-		font-size: 12px;
-		line-height: 18px;
+		color: darken($seagreen, 35%);
+		font-size: 1.2rem;
+		line-height: 1.8rem;
 		display: block;
 		margin: 0;
 	}
 	.url {
 		font-style: italic;
-		font-size: 13px;
+		font-size: 1.3rem;
 	}
 }
 
-input[type=submit] {
-	color: #333333;
+#comments input[type="submit"] {
+	width: 15rem;
+	margin: 2rem 0 0 0;
+	padding: 1rem 2rem;
+	border: 1px solid darken($seagreen, 35%);
+	background: none;
+	color: darken($seagreen, 35%);
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+#comments input[type="submit"]:hover {
+	background: darken($seagreen70, 15%);
 }
 
 #respond {
-	margin-top: 24px;
-	border-top: 1px solid #e7e7e7;
+	margin-top: 2.4rem;
+	border-top: 1px solid darken($seagreen, 35%);
 	overflow: hidden;
 	position: relative;
 	.comment-notes {
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
+	}
+	.logged-in-as {
+		margin-bottom: 1rem;
+		a {
+			color: darken($seagreen, 35%);
+		}
+	}
+	label {
+		display: none;
 	}
 }
 
 .form-allowed-tags {
-	line-height: 1em;
+	line-height: 1rem;
 }
 
 .children #respond {
-	margin: 0 48px 0 0;
+	margin: 0 4.8rem 0 0;
 }
 
 h3#reply-title {
-	margin: 18px 0;
+	margin: 1.8rem 0;
 }
 
 #comments-list #respond {
-	margin: 0 0 18px;
+	margin: 0 0 1.8rem;
 }
 
 #cancel-comment-reply-link {
-	font-size: 12px;
-	line-height: 18px;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
 	font-weight: 400;
 }
 
 #respond {
 	.required {
-		color: #ff4b33;
+		color: darken($seagreen, 35%);
 		font-weight: 700;
 	}
 	label {
-		color: #888888;
-		font-size: 12px;
+		color: darken($seagreen, 35%);
+		font-size: 1.2rem;
 	}
 	input {
-		width: 98%;
-		margin: 0 0 9px;
+		width: 100%;
+		margin: 0 0 0.9rem;
 	}
 	textarea {
-		width: 98%;
+		width: 100%;
 	}
 	dt {
-		color: #888888;
-		font-size: 12px;
-		line-height: 18px;
+		color: darken($seagreen, 35%);
+		font-size: 1.2rem;
+		line-height: 1.8rem;
 	}
 	dd {
-		color: #888888;
-		font-size: 12px;
-		line-height: 18px;
+		color: darken($seagreen, 35%);
+		font-size: 1.2rem;
+		line-height: 1.8rem;
 		code {
-			font-size: 11px;
+			font-size: 1.1rem;
 		}
 	}
 	.form-submit {
-		margin: 0 0 24px;
+		margin: 0 0 2.4rem;
 		input {
 			width: auto;
-			font-size: 14px;
+			font-size: 1.4rem;
 		}
 	}
 	dl {
-		margin: 0 0 10px;
+		margin: 0 0 1rem;
 	}
 	dt {
 		display: inline;
@@ -220,12 +256,12 @@ p.form-allowed-tags, .nocomments {
 
 .comment-meta a {
 	&:active, &:hover {
-		color: #ff4b33;
+		color: darken($seagreen, 35%);
 	}
 }
 
 .reply a:hover, a.comment-edit-link:hover {
-	color: #ff4b33;
+	color: darken($seagreen, 35%);
 }
 
 #respond p, #comments-list ul #respond {

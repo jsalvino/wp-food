@@ -296,13 +296,13 @@ if ( ! function_exists( 'hackeryou_posted_in' ) ) :
  */
 function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
-	$tag_list = get_the_tag_list( '', ', ' );
+	$tag_list = get_the_tag_list( '', ' ' );
 	if ( $tag_list ) {
-		$posted_in = 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Posted in %1$s and tagged %2$s';
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Posted in %1$s';
 	} else {
-		$posted_in = 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>';
 	}
 	// Prints the string, replacing the placeholders.
 	printf(
