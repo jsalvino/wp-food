@@ -6,6 +6,14 @@
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+        <section class="entry-img">
+          <?php // if there is a featured image, show the image
+          if ( has_post_thumbnail() ) { 
+            the_post_thumbnail('post-square');
+          } 
+          ?>
+        </section> <!-- /.entry-img -->
+
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
 

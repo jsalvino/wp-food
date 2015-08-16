@@ -1,0 +1,60 @@
+/*
+====================================
+Menu Page Default Styling
+====================================
+*/
+
+.main-food-menu {
+	margin: 6% 0;
+	text-align: center;
+}
+
+.main-food-menu .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	margin: 0 auto;
+	padding: 2.5%;
+	background: $seagreen70;
+} 
+
+.main-food-menu .sidebar {
+	width: 100%;
+}
+
+.main-food-menu .sidebar h3 {
+	font-weight: 400;
+	margin: 0 0 2.5% 0;
+}
+
+.main-food-menu .sidebar h3:before {
+	content: '\2014\00a0';
+}
+
+.main-food-menu .sidebar h3:after {
+	content: '\00a0\2014';
+}
+
+.main-food-menu .sidebar .textwidget p {
+	font-weight: 300;
+	margin: 0;
+}
+
+.main-food-menu .sidebar .textwidget p:nth-child(3n+1) {
+	font-weight: 400;
+}
+
+.main-food-menu .sidebar .textwidget p:nth-child(3n+3) {
+	margin-bottom: 2.5%;
+}
+
+.main-food-menu .sidebar .textwidget p:last-child {
+	margin-bottom: 5%;
+}
+
+.main-food-menu .sidebar:last-child .textwidget p:last-child {
+	margin-bottom: 0;
+}
+
+// end of styles

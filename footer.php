@@ -1,13 +1,13 @@
-<footer>
-  <div class="container">
-  	<?php wp_nav_menu( array(
-  	  'container' => false,
-  	  'theme_location' => 'social'
-  	)); ?>
-    <p>&copy; <?php echo get_bloginfo ( 'name' ); ?> <?php echo date('Y'); ?></p>
-  </div>
-</footer>
-</div> <!-- wrapper -->
+		<footer class="footer-main">
+		  <div class="container">
+		  	<?php wp_nav_menu( array(
+		  	  'container' => false,
+		  	  'theme_location' => 'social'
+		  	)); ?>
+		    <p>&copy; <?php echo get_bloginfo ( 'name' ); ?> <?php echo date('Y'); ?></p>
+		  </div>
+		</footer>
+	</div> <!-- wrapper -->
 <script>
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID

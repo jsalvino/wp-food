@@ -1,0 +1,32 @@
+/*
+====================================
+Home Page Default Styling
+====================================
+*/
+
+.main-home {
+	text-align: center;
+}
+
+.hero-text {
+	width: 25%;
+	padding: 5.5% 0;
+	margin: 0 auto;
+	background: $seagreen70;
+}
+
+.hero-text p {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 7.2rem;
+	line-height: 1;
+	color: $sunset;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-text p:last-child {
+	font-size: 2.8rem;
+	margin-top: 0.8rem;
+}
+
+// end of styles
