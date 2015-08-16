@@ -1,0 +1,59 @@
+/*
+====================================
+General Styling
+====================================
+*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	color: $darkgrey;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.header-main {
+	margin: 2% 0;
+}
+
+.content { 
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.sidebar { 
+	width: 30%;
+	float: left;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.full { // not sure where this is used ???
+	width: 100%;
+}
+
+footer {
+	clear: both;
+}
+
+// end of styles

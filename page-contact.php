@@ -15,9 +15,9 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        margin:0!important;
        }
        body {
-       /*background: url(<?php echo $image_url[0]; ?>) #fff center center no-repeat; */
-       background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(<?php echo $image_url[0]; ?>) #fff center center no-repeat;
-       background-size: cover;
+       background: url(<?php echo $image_url[0]; ?>) #fff center center no-repeat; 
+       /*background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(<?php echo $image_url[0]; ?>) #fff center center no-repeat;*/
+       background-size: auto;
        }
        /*.wrapper {
         height: auto;
@@ -29,7 +29,7 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
 get_header();  ?>
 
 <div class="main main-contact">
-  <div class="container">
+  <div class="container clearfix">
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

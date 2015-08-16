@@ -19,22 +19,22 @@
 <body <?php body_class(); ?> <?php post_class(); ?>>
 
 <div class="wrapper">
-<header>
+  <header class="header-main">
 
-  <div class="container">
-    
-    <?php /* commenting out h1
-      <h1>
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-          <?php bloginfo( 'name' ); ?>
-        </a>
-      </h1>
-    */ ?>
+    <div class="container">
+      
+      <?php /* commenting out h1
+        <h1>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
+      */ ?>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
-</header><!--/.header-->
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </div> <!-- /.container -->
+  </header><!--/.header-->
 
