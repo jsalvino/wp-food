@@ -37,4 +37,10 @@ About Page Default Styling
 	margin-bottom: 0;
 }
 
+@media all and (max-width: 800px) {
+	.main-about {
+		text-align: center;
+	}
+}
+
 // end of styles

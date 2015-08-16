@@ -59,6 +59,28 @@ Navigation Styling
   border-bottom: 6px solid darken($sunset, 10%);
 }
 
+@media all and (max-width: 800px) {
+  #menu-main-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu-main-nav li {
+    padding: 3rem 4rem 2rem 4rem;
+  }
+
+  #menu-main-nav li:nth-child(3) {
+    order: -1;
+    margin-bottom: 5rem;
+  }
+ #menu-main-nav li:nth-child(3) a:hover {
+  border-bottom: none;
+  }
+}
+
+
+
+
 // social nav styles
 
 #menu-social-menu li a {
@@ -75,6 +97,18 @@ Navigation Styling
 #menu-social-menu li:last-child:after {
 	content: '';
 }
+
+@media all and (max-width: 800px) {
+  #menu-social-menu {
+    width: 100%;
+  }
+
+  #menu-social-menu li a {
+    font-size: 1.8rem;
+  }
+}
+
+
 
 // media queries
 
