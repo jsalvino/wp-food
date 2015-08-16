@@ -307,7 +307,7 @@ function hackeryou_posted_in() {
 	// Prints the string, replacing the placeholders.
 	printf(
 		$posted_in,
-		get_the_category_list( ', ' ),
+		get_the_category_list( ' ' ),
 		$tag_list,
 		get_permalink(),
 		the_title_attribute( 'echo=0' )
