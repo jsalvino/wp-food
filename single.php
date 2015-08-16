@@ -33,13 +33,13 @@
         <section class="entry-img">
           <?php // if there is a featured image, show the image
           if ( has_post_thumbnail() ) { 
-            the_post_thumbnail('post-square');
+            the_post_thumbnail('original');
           } 
           ?>
         </section> <!-- /.entry-img -->
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h1 class="entry-title">&mdash;&nbsp;<?php the_title(); ?>&nbsp;&mdash;</h1>
 
           <div class="entry-meta">
             <?php hackeryou_posted_on(); ?>
@@ -54,8 +54,7 @@
           </div><!-- .entry-content -->
 
           <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+            <?php hackeryou_posted_in(); ?><span class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</span><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-utility -->
         </div><!-- #post-## -->
 

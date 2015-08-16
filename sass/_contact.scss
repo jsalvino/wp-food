@@ -44,17 +44,17 @@ Contact Page Default Styling
 	text-align: left;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="submit"]:focus,
-textarea:focus {
+.main-contact input[type="text"]:focus,
+.main-contact input[type="email"]:focus,
+.main-contact input[type="submit"]:focus,
+.main-contact textarea:focus {
 	outline: none;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="submit"],
-textarea {
+.main-contact input[type="text"],
+.main-contact input[type="email"],
+.main-contact input[type="submit"],
+.main-contact textarea {
 	width: 100%;
 	padding: 0.6rem;
 	border:none;
@@ -63,12 +63,12 @@ textarea {
 	font-weight: 300;
 }
 
-textarea {
+.main-contact textarea {
 	height: 10rem;
 	margin-bottom: 1rem;
 }
 
-input[type="submit"] {
+.main-contact input[type="submit"] {
 	width: 15rem;
 	padding: 1rem 2rem;
 	border: 1px solid $sunset;
@@ -76,12 +76,11 @@ input[type="submit"] {
 	color: $sunset;
 	font-weight: 400;
 	text-transform: uppercase;
-	transition: all 0.2s ease;
+	transition: all 0.3s ease;
 }
 
-input[type="submit"]:hover {
+.main-contact input[type="submit"]:hover {
 	background: $sunset50;
-	transition: all 0.5s ease;
 	color: darken($sunset, 20%);
 }
 
