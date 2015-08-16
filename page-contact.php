@@ -16,12 +16,9 @@ add_action( 'wp_head', 'vr_set_featured_background', 99);
        }
        body {
        background: url(<?php echo $image_url[0]; ?>) #fff center center no-repeat; 
-       /*background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(<?php echo $image_url[0]; ?>) #fff center center no-repeat;*/
        background-size: auto;
+       background-attachment: fixed;
        }
-       /*.wrapper {
-        height: auto;
-       }*/
      </style>
    <?php
  }  //end if statement
