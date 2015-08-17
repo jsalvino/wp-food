@@ -29,6 +29,7 @@ About Page Default Styling
 	font-weight: 400;
 	color: $sunset;
 	line-height: 1;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -37,9 +38,18 @@ About Page Default Styling
 	margin-bottom: 0;
 }
 
-@media all and (max-width: 800px) {
-	.main-about {
-		text-align: center;
+// media queries
+
+@media all and (max-width: 1000px) {
+	.about-text {
+		width: 75%;
+		padding: 3%;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.about-text {
+		width: 85%;
 	}
 }
 
