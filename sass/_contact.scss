@@ -109,4 +109,24 @@ Contact Page Default Styling
 	margin: 0 0 1rem 0;
 }
 
+@media all and (max-width: 800px) {
+	.main-contact .container {
+		width: 90%;
+	}
+	
+	.contact-text {
+		float: none;
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;	
+		border-bottom: 1px solid $sunset;
+	}
+
+	.main-contact .container .sidebar {
+		margin: 2rem auto 0 auto;
+		text-align: center;
+		float: none;
+		width: 90%;
+	}
+}
 // end of styles

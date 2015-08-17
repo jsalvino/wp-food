@@ -29,4 +29,9 @@ Home Page Default Styling
 	margin-top: 0.8rem;
 }
 
+@media all and (max-width: 800px) {
+	.hero-text {
+    	display: none;
+ 	}
+}
 // end of styles
