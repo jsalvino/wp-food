@@ -117,23 +117,20 @@ Blog Page Default Styling
 	}
 }
 
-@media all and (max-width: 800px) {
+// media queries
+
+@media all and (max-width: 900px) {
+	.container-blog {
+		margin: 6% 0 5% 0;
+	}
 	.container-blog .content {
 		float: none;
-		width: 90%;
+		width: 85%;
 		margin: 0 auto;
 	}
-	
-	.container-blog h2 {
-		font-size: 2.0rem;
-	}
-
-	.container-blog p {
-		font-size: 1.2rem;
-	}
-
 	.container-blog .sidebar {
 		display: none;
 	}
 }
+
 // end of styles

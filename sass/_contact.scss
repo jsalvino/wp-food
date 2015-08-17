@@ -109,24 +109,46 @@ Contact Page Default Styling
 	margin: 0 0 1rem 0;
 }
 
-@media all and (max-width: 800px) {
+// media queries
+
+@media all and (max-width: 1000px) {
 	.main-contact .container {
-		width: 90%;
+		width: 75%;
+		padding: 3%;
 	}
-	
+}
+
+@media all and (max-width: 900px) {
+	.main-contact .container {
+		width: 85%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.contact-text {
+		margin-right: 5%
+	}
+}
+
+@media all and (max-width: 500px) {
 	.contact-text {
 		float: none;
-		text-align: center;
 		width: 90%;
 		margin: 0 auto;	
-		border-bottom: 1px solid $sunset;
+		text-align: center;
 	}
-
+	.contact-text input[type="submit"] {
+		margin-bottom: 2rem;
+	}
+	.contact-text .ajax-loader {
+		display: none;
+	}
 	.main-contact .container .sidebar {
-		margin: 2rem auto 0 auto;
+		margin: 1.4rem auto 0 auto;
 		text-align: center;
 		float: none;
 		width: 90%;
 	}
 }
+
 // end of styles

@@ -29,9 +29,59 @@ Home Page Default Styling
 	margin-top: 0.8rem;
 }
 
-@media all and (max-width: 800px) {
+// media queries
+
+@media all and (max-width: 1000px) {
 	.hero-text {
-    	display: none;
- 	}
+		width: 28%;
+	}
 }
+
+@media all and (max-width: 900px) {
+	.hero-text {
+		width: 30%;
+		margin-bottom: 5%;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.hero-text {
+		width: 32%;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.hero-text {
+		width: 34%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.hero-text {
+		width: 36%;
+		margin-bottom: 7%;
+	}
+}
+
+@media all and (max-width: 450px) {
+	.hero-text {
+		width: 38%;
+		margin-bottom: 9%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.hero-text {
+		width: 40%;
+		margin-bottom: 11%;
+	}
+}
+
+@media all and (max-width: 350px) {
+	.hero-text {
+		width: 42%;
+		margin-bottom: 13%;
+	}
+}
+
 // end of styles

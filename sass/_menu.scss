@@ -57,4 +57,19 @@ Menu Page Default Styling
 	margin-bottom: 0;
 }
 
+// media queries
+
+@media all and (max-width: 1000px) {
+	.main-food-menu .container {
+		width: 75%;
+		padding: 3%;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.main-food-menu .container {
+		width: 85%;
+	}
+}
+
 // end of styles
