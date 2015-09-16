@@ -4,7 +4,8 @@
 		  	  'container' => false,
 		  	  'theme_location' => 'social'
 		  	)); ?>
-		    <p>&copy; <?php echo get_bloginfo ( 'name' ); ?> <?php echo date('Y'); ?></p>
+		  	<!-- <p><!-- &copy; --> <?php // echo get_bloginfo ( 'name' ); ?> <?php // echo date('Y'); ?><!-- </p> -->
+		    <p>&copy; 2015 Vesna Jocic & John Salvino </p>
 		  </div>
 		</footer>
 	</div> <!-- wrapper -->
